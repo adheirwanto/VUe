@@ -12,13 +12,13 @@
 	<h1 class="font-bold text-center bg-green-600 rounded-xl m-2 p-5 pl-8 pr-8 mb-5 text-3xl shadow-xl"><i>Vue Marketplace</i></h1>
 	<div id="app" class="max-w-screen-lg mx-auto">
     <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 m-2">
-        <div class="p-5 border border-gray-700 bg-slate-50 rounded-xl shadow max-sm:rounded-none" v-for="item in products" :key="item.id">
+        <div class="p-5 border border-gray-700 bg-slate-50 rounded-xl shadow" v-for="item in products" :key="item.id">
             <div class="flex flex-col">
                 <img :src="item.image" alt="" class="w-full rounded-xl shadow-sm border border-black hover:brightness-75 transition hover:scale-95 mb-4 w-80 h-80">
                 <h1 class="text-3xl font-bold text-blue-500 mb-2">{{ item.name }}</h1>
                 <h2 class="text-2xl font-semibold mb-2">Rp.{{ item.price }}</h2>
                 <p class="font-semibold text-sm">{{ item.desc }}</p>
-								<button class="p-3 bg-red-600 text-white rounded-xl mt-2 text-center justify-center font-bold hover:border hover:bg-white hover:text-black hover:border-black shadow-lg transition">Beli</button>
+		<button class="p-3 bg-red-600 text-white rounded-xl mt-2 text-center justify-center font-bold hover:border hover:bg-white hover:text-black hover:border-black shadow-lg transition">Beli</button>
             </div>
         </div>
     </div>
